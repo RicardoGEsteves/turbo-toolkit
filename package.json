@@ -10,6 +10,7 @@
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",
     "format": "biome format . --write",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky",
     "deps:list": "syncpack list",
     "deps:check": "syncpack list-mismatches",

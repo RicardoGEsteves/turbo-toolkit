@@ -57,4 +57,4 @@ playwright-report
 # Package manager
 pnpm-lock.yaml
 npm-lock.json
-apps/web/playwright-report/index.html
+

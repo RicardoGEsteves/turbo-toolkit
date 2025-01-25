@@ -1,5 +1,4 @@
 import { defineConfig, devices } from '@playwright/test';
-import path from 'node:path';
 
 export default defineConfig({
   testDir: './tests/e2e',
