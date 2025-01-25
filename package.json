@@ -1,0 +1,32 @@
+{
+  "name": "turbo-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "install": "turbo run install",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "format": "biome format . --write",
+    "prepare": "husky",
+    "deps:list": "syncpack list",
+    "deps:check": "syncpack list-mismatches",
+    "deps:fix": "syncpack fix-mismatches",
+    "deps:update": "syncpack update",
+    "clean": "node scripts/clean.mjs"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "fs-extra": "^11.3.0",
+    "husky": "^9.1.7",
+    "syncpack": "^13.0.0",
+    "turbo": "^2.3.4"
+  }
+}
