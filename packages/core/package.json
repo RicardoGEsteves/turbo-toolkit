@@ -13,12 +13,16 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "nanoid": "^5.0.9",
     "react": "^19.0.0",
     "react-compiler-runtime": "19.0.0-beta-decd7b8-20250118",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react-swc": "^3.7.2",

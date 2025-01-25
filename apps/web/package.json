@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome lint .",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
+    "test": "playwright test",
+    "test:watch": "playwright test --watch",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui"
   },

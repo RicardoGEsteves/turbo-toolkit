@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    },
+    "./components/*": {
+      "import": "./src/components/*.ts",
+      "types": "./src/components/*.ts"
+    }
+  },
   "scripts": {
     "build": "vite build",
     "dev": "storybook dev -p 6006",

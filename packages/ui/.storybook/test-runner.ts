@@ -1,8 +1,8 @@
 import type { TestRunnerConfig } from '@storybook/test-runner';
 import type { Page } from '@playwright/test';
 import { expect } from 'vitest';
-import { readFile, writeFile, mkdir } from 'fs/promises';
-import path from 'path';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import path from 'node:path';
 
 interface ExtendedTestRunnerConfig extends TestRunnerConfig {
   testMatch?: (testFile: string) => Promise<boolean>;

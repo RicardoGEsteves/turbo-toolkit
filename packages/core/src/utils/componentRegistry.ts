@@ -1,25 +1,34 @@
 // Component Registry
 // This file manages registration and lookup of components
 
+import React from 'react';
+
 export interface ComponentRegistryEntry {
   name: string;
-  component: React.ComponentType<any>;
+  component: React.ComponentType<Record<string, unknown>>;
 }
 
-export class ComponentRegistry {
-  private static registry: Map<string, ComponentRegistryEntry> = new Map();
+const registry = new Map<string, ComponentRegistryEntry>();
 
-  static register(entry: ComponentRegistryEntry) {
-    this.registry.set(entry.name, entry);
-  }
-
-  static get(name: string): ComponentRegistryEntry | undefined {
-    return this.registry.get(name);
-  }
-
-  static list(): ComponentRegistryEntry[] {
-    return Array.from(this.registry.values());
-  }
+export function registerComponent(entry: ComponentRegistryEntry): void {
+  registry.set(entry.name, entry);
 }
 
-export default ComponentRegistry;
+export function getComponent(name: string): ComponentRegistryEntry | undefined {
+  return registry.get(name);
+}
+
+export function listComponents(): ComponentRegistryEntry[] {
+  return Array.from(registry.values());
+}
+
+export function clearRegistry(): void {
+  registry.clear();
+}
+
+export default {
+  registerComponent,
+  getComponent,
+  listComponents,
+  clearRegistry
+};
