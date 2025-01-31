@@ -33,7 +33,7 @@
     "react": "^19.0.0",
     "react-compiler-runtime": "19.0.0-beta-decd7b8-20250118",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^2.6.0"
+    "tailwind-merge": "^3.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
