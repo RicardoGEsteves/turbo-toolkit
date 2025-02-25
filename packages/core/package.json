@@ -15,7 +15,7 @@
     "@repo/ui": "workspace:*",
     "nanoid": "^5.0.9",
     "react": "^19.0.0",
-    "react-compiler-runtime": "19.0.0-beta-decd7b8-20250118",
+    "react-compiler-runtime": "19.0.0-beta-e1e972c-20250221",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "@vitejs/plugin-react-swc": "^3.7.2",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
-    "babel-plugin-react-compiler": "19.0.0-beta-decd7b8-20250118",
+    "babel-plugin-react-compiler": "19.0.0-beta-e1e972c-20250221",
     "postcss": "^8.5.1",
     "tailwindcss": "^4.0.0",
     "typescript": "^5.7.3",
