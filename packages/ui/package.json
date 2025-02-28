@@ -31,7 +31,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "react": "^19.0.0",
-    "react-compiler-runtime": "19.0.0-beta-decd7b8-20250118",
+    "react-compiler-runtime": "19.0.0-beta-e1e972c-20250221",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0"
   },
@@ -53,7 +53,7 @@
     "@vitejs/plugin-react-swc": "^3.7.2",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
-    "babel-plugin-react-compiler": "19.0.0-beta-decd7b8-20250118",
+    "babel-plugin-react-compiler": "19.0.0-beta-e1e972c-20250221",
     "jest-axe": "^9.0.0",
     "postcss": "^8.5.1",
     "storybook": "^8.5.1",
